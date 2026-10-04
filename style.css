@@ -1,0 +1,422 @@
+/* -------- Body & Header -------- */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f9f1f5, #e0f7fa);
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+header, .header-login {
+    background: #007bff;
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.logout-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    text-decoration: underline;
+}
+
+#settingsBtn {
+    background: #ffc107;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+#settingsBtn:hover {
+    background: #e0a800;
+}
+
+/* -------- Form Wrapper & Containers -------- */
+.form-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 500px;
+    transition: background 0.5s, color 0.5s;
+}
+
+body.dark-mode .form-container {
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #007bff;
+    font-size: 2rem;
+}
+
+body.dark-mode .form-container h2 {
+    color: #2196f3;
+}
+
+.form-container label {
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    font-size: 1rem;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+body.dark-mode .form-container input,
+body.dark-mode .form-container select,
+body.dark-mode .form-container textarea {
+    background: #2c2c2c;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 16px;
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.form-container button:hover {
+    background: #0056b3;
+    transform: scale(1.03);
+}
+
+.success-btn {
+    width: 100%;
+    padding: 16px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s;
+}
+
+.success-btn:hover {
+    background: #218838;
+    transform: scale(1.03);
+}
+
+.signup-text,
+.success-message,
+.demo-text {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 0.95rem;
+}
+
+.signup-text a,
+.demo-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.dark-mode .signup-text a,
+body.dark-mode .demo-text a {
+    color: #2196f3;
+}
+
+/* -------- Dashboard Table -------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+.status-upcoming { color: green; font-weight: bold; }
+.status-expired { color: red; font-weight: bold; }
+
+/* -------- Chatbox -------- */
+.chatbox {
+    width: 95%;
+    max-width: 850px;
+    height: 500px;
+    margin: 25px auto;
+    background: #fff;
+    border-radius: 25px;
+    padding: 25px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: background 0.5s, color 0.5s;
+}
+
+body.dark-mode .chatbox {
+    background: #1e1e1e;
+    border: 1px solid #333;
+}
+
+.message {
+    margin: 5px;
+    padding: 14px 20px;
+    border-radius: 25px;
+    max-width: 70%;
+    word-wrap: break-word;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.message.user {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+    box-shadow: 0 6px 15px rgba(0,123,255,0.3);
+}
+
+body.dark-mode .message.user {
+    background: #2196f3;
+}
+
+.message.bot {
+    background: #e4e4e4;
+    color: black;
+    align-self: flex-start;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+body.dark-mode .message.bot {
+    background: #2c2c2c;
+    color: #e0e0e0;
+}
+
+.message.typing {
+    font-style: italic;
+    opacity: 0.7;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 0.7; }
+    25%, 75% { opacity: 0.3; }
+}
+
+/* -------- Input Container -------- */
+.input-container {
+    width: 95%;
+    max-width: 850px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    gap: 12px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 16px 20px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+}
+
+body.dark-mode .input-container input {
+    background: #2c2c2c;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+.input-container button {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* -------- Quick Reply Buttons -------- */
+#quickReplies {
+    width: 95%;
+    max-width: 850px;
+    margin: 15px auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#quickReplies button {
+    background: #00bfa5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+#quickReplies button:hover {
+    background: #00796b;
+    transform: scale(1.05);
+}
+
+/* -------- Settings Modal -------- */
+#settingsModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.6);
+}
+
+.settings-content {
+    background: #fff;
+    margin: 8% auto;
+    padding: 30px 35px;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    position: relative;
+    transition: background 0.5s, color 0.5s, transform 0.3s;
+}
+
+body.dark-mode .settings-content {
+    background: #2c2c2c;
+    color: #e0e0e0;
+}
+
+#closeSettings {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#closeSettings:hover {
+    color: #ff5252;
+}
+
+#saveSettings {
+    margin-top: 20px;
+    width: 100%;
+    padding: 16px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#saveSettings:hover {
+    background: #218838;
+    transform: scale(1.03);
+}
+
+.dark-mode-label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.greeting {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+body.dark-mode .greeting {
+    color: #f1f1f1;
+}
+    
