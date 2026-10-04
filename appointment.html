@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Appointment</title>
+<style>
+    /* ---------- General Styles ---------- */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f7f7f9;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 50px;
+        min-height: 100vh;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    /* ---------- Container ---------- */
+    .container {
+        background: #fff;
+        padding: 40px 35px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 500px;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    h2 {
+        text-align: center;
+        color: #1E3A8A;
+        margin-bottom: 30px;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    label {
+        display: block;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #2c3e50;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 14px 15px;
+        margin-top: 8px;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        font-size: 1rem;
+        transition: border 0.3s, background 0.3s;
+    }
+
+    input:focus, select:focus {
+        border-color: #1E3A8A;
+        outline: none;
+    }
+
+    button {
+        margin-top: 30px;
+        width: 100%;
+        padding: 15px;
+        background: #1E3A8A;
+        border: none;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+        background: #16316f;
+        transform: translateY(-2px);
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 500px) {
+        .container { padding: 30px 20px; }
+        h2 { font-size: 1.6rem; }
+        input, select, button { font-size: 1rem; padding: 12px 10px; }
+    }
+
+    /* ---------- Dark Mode ---------- */
+    .dark-mode { background-color: #1F2937; color: #f3f4f6; }
+    .dark-mode .container { background-color: #374151; color: #f3f4f6; }
+    .dark-mode input, .dark-mode select { background-color: #1F2937; color: #f3f4f6; border: 1px solid #555; }
+    .dark-mode button { background-color: #2563EB; }
+    .dark-mode button:hover { background-color: #1D4ED8; }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Book Appointment</h2>
+    <form action="/appointment" method="POST">
+        <label for="patient">Patient Name</label>
+        <input type="text" id="patient" name="patient" placeholder="Enter your name" required>
+
+        <label for="doctor">Select Doctor</label>
+        <select id="doctor" name="doctor" required>
+            <option value="">-- Select a doctor --</option>
+        </select>
+
+        <label for="date">Appointment Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Appointment Time</label>
+        <input type="time" id="time" name="time" required>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+</div>
+
+<script>
+async function loadDoctors() {
+    try {
+        const res = await fetch('/api/doctors');
+        const doctors = await res.json();
+        const select = document.getElementById('doctor');
+
+        if (!doctors || doctors.length === 0) {
+            const option = document.createElement('option');
+            option.value = "";
+            option.text = "No doctors available";
+            select.appendChild(option);
+            return;
+        }
+
+        doctors.forEach(doc => {
+            const option = document.createElement('option');
+            option.value = doc.name;
+            option.text = `${doc.name} (${doc.specialization}) - ${doc.hospital}, ${doc.address}`;
+            select.appendChild(option);
+        });
+    } catch (err) {
+        console.error("Error loading doctor list:", err);
+        const select = document.getElementById('doctor');
+        const option = document.createElement('option');
+        option.value = "";
+        option.text = "Failed to load doctors";
+        select.appendChild(option);
+    }
+}
+
+// Load doctors on page load
+window.addEventListener('DOMContentLoaded', loadDoctors);
+</script>
+</body>
+</html>
