@@ -1,0 +1,2650 @@
+{
+  "diseases": {
+    "common_cold": {
+      "symptoms": ["runny nose", "sneezing", "sore throat", "mild fever", "cough"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Drink warm fluids, inhale steam, rest. Optional: Cetrizine for runny nose, Paracetamol for mild fever."
+    },
+    "influenza": {
+      "symptoms": ["high fever", "body ache", "chills", "cough", "fatigue"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Rest, hydration, light diet. Optional: Paracetamol for fever, Tamiflu if prescribed."
+    },
+    "fever": {
+      "symptoms": ["high temperature", "sweating", "body ache", "chills"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Hydration, rest, Paracetamol for fever."
+    },
+    "headache": {
+      "symptoms": ["pain on head", "pressure or tightness", "sensitivity to light"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Rest, hydration, Paracetamol or Ibuprofen if needed."
+    },
+    "migraine": {
+      "symptoms": ["one-sided headache", "nausea", "sensitivity to light"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Rest in dark room, cold compress, avoid triggers. Optional: Sumatriptan if prescribed."
+    },
+
+    "sore_throat": {
+      "symptoms": ["pain while swallowing", "fever", "redness in throat"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Warm fluids, saltwater gargle, honey. Optional: Paracetamol if fever present."
+    },
+    "runny_nose": {
+      "symptoms": ["nasal drip", "sneezing", "congestion"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Drink warm fluids, steam inhalation. Optional: Cetrizine for allergy symptoms."
+    },
+    "cough": {
+      "symptoms": ["dry cough", "productive cough", "sore throat", "fever"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Hydration, honey, steam inhalation. Optional: Cough syrup, Paracetamol if fever."
+    },
+    "sinusitis": {
+      "symptoms": ["facial pain", "nasal congestion", "thick mucus"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Steam inhalation, saline nasal rinse, hydration."
+    },
+    "tonsillitis": {
+      "symptoms": ["sore throat", "difficulty swallowing", "fever", "swollen tonsils"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Warm fluids, rest, saltwater gargle. Optional: Paracetamol for pain."
+    },
+    "fatigue": {
+      "symptoms": ["tiredness", "weakness", "dizziness"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "general_physician",
+      "advice": "Balanced diet, hydration, rest. Optional: Multivitamins or iron supplements if diagnosed."
+    },
+    "dehydration": {
+      "symptoms": ["excessive thirst", "dry mouth", "dizziness", "low urine output"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hydration with ORS or electrolyte drinks. Seek urgent medical care."
+    },
+    "heat_stroke": {
+      "symptoms": ["very hot body", "dizziness", "nausea", "confusion"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Move to cool place, hydrate, urgent medical attention required."
+    },
+    "food_poisoning": {
+      "symptoms": ["vomiting", "diarrhea", "abdominal cramps", "fever"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gastroenterologist",
+      "advice": "Hydration, bland diet, rest. Seek medical care if severe."
+    },
+    "allergic_rhinitis": {
+      "symptoms": ["sneezing", "runny nose", "itchy eyes", "watery eyes"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Avoid allergens, saline nasal rinse. Optional: Antihistamines like Cetrizine or Loratadine."
+    },
+    "asthma": {
+      "symptoms": ["shortness of breath", "wheezing", "chest tightness", "cough"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "pulmonologist",
+      "advice": "Avoid triggers, follow inhaler routine as prescribed."
+    },
+    "bronchitis": {
+      "symptoms": ["cough", "mucus production", "chest discomfort", "mild fever"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "pulmonologist",
+      "advice": "Rest, hydration, monitor symptoms. Optional: Cough syrup."
+    },
+    "pneumonia": {
+      "symptoms": ["cough with phlegm", "high fever", "shortness of breath", "chest pain"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate medical attention required. Antibiotics if prescribed."
+    },
+    "tuberculosis": {
+      "symptoms": ["persistent cough", "weight loss", "night sweats", "fever"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Seek urgent medical evaluation for TB testing and treatment."
+    },
+    "copd": {
+      "symptoms": ["chronic cough", "shortness of breath", "wheezing", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "pulmonologist",
+      "advice": "Lifestyle management, follow-up with doctor."
+    },
+    "pulmonary_embolism": {
+      "symptoms": ["sudden shortness of breath", "chest pain", "rapid heartbeat", "coughing blood"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospitalization required."
+    },
+    "pleurisy": {
+      "symptoms": ["sharp chest pain", "breathing discomfort", "cough"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "pulmonologist",
+      "advice": "Medical evaluation needed."
+    },
+    "pulmonary_fibrosis": {
+      "symptoms": ["shortness of breath", "dry cough", "fatigue", "weight loss"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "pulmonologist",
+      "advice": "Medical evaluation required."
+    },
+    "sleep_apnea": {
+      "symptoms": ["loud snoring", "daytime sleepiness", "pauses in breathing"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "sleep_specialist",
+      "advice": "Sleep study recommended."
+    },
+    "whooping cough": {
+      "symptoms": ["severe coughing fits", "whooping sound", "vomiting after cough"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate medical evaluation required."
+    },
+    "diarrhea": {
+      "symptoms": ["frequent loose stools", "abdominal cramps", "nausea", "dehydration"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gastroenterologist",
+      "advice": "Hydration with ORS, bland diet, rest. Seek medical care if severe."
+    },
+    "constipation": {
+      "symptoms": ["infrequent bowel movement", "hard stools", "abdominal discomfort"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Increase fiber intake, hydration, physical activity."
+    },
+    "indigestion": {
+      "symptoms": ["bloating", "burning sensation", "nausea", "belching"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Eat smaller meals, avoid spicy/fatty foods, chew thoroughly."
+    },
+    "gastritis": {
+      "symptoms": ["upper abdominal pain", "nausea", "vomiting", "loss of appetite"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gastroenterologist",
+      "advice": "Avoid alcohol and NSAIDs, bland diet, prescribed antacids."
+    },
+    "acid_reflux": {
+      "symptoms": ["heartburn", "acidic taste", "chest discomfort", "regurgitation"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Avoid large meals, spicy food, elevate head while sleeping. Optional: Antacids."
+    },
+    "peptic_ulcer": {
+      "symptoms": ["burning stomach pain", "nausea", "vomiting", "bloating"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gastroenterologist",
+      "advice": "Avoid NSAIDs, spicy food; prescribed proton pump inhibitors if needed."
+    },
+    "irritable_bowel_syndrome": {
+      "symptoms": ["abdominal pain", "bloating", "diarrhea or constipation", "mucus in stool"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gastroenterologist",
+      "advice": "Dietary management, stress control, prescribed medications if needed."
+    },
+    "ulcerative_colitis": {
+      "symptoms": ["bloody diarrhea", "abdominal pain", "weight loss", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gastroenterologist",
+      "advice": "Medical evaluation required; treatment includes anti-inflammatories and diet management."
+    },
+    "crohns_disease": {
+      "symptoms": ["abdominal pain", "diarrhea", "weight loss", "fatigue", "fever"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gastroenterologist",
+      "advice": "Medical evaluation required; treatment includes medications and sometimes surgery."
+    },
+    "appendicitis": {
+      "symptoms": ["right lower abdominal pain", "nausea", "vomiting", "fever", "loss of appetite"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate surgical evaluation required."
+    },
+    "gallstones": {
+      "symptoms": ["upper right abdominal pain", "nausea", "vomiting", "indigestion"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gastroenterologist",
+      "advice": "Medical evaluation; surgery may be needed if symptomatic."
+    },
+    "hepatitis_a": {
+      "symptoms": ["fatigue", "nausea", "abdominal pain", "jaundice", "dark urine"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "hepatologist",
+      "advice": "Supportive care, hydration, rest."
+    },
+    "hepatitis_b": {
+      "symptoms": ["fatigue", "nausea", "abdominal pain", "jaundice", "dark urine"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "hepatologist",
+      "advice": "Medical evaluation for antiviral therapy."
+    },
+    "hepatitis_c": {
+      "symptoms": ["fatigue", "nausea", "abdominal pain", "jaundice", "dark urine"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "hepatologist",
+      "advice": "Medical evaluation; antiviral therapy may be required."
+    },
+    "pancreatitis": {
+      "symptoms": ["severe upper abdominal pain", "nausea", "vomiting", "fever", "rapid pulse"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospitalization required."
+    },
+    "liver_cirrhosis": {
+      "symptoms": ["fatigue", "jaundice", "abdominal swelling", "confusion", "bleeding tendency"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "hepatologist",
+      "advice": "Medical evaluation, lifestyle changes, possible transplant in severe cases."
+    },
+    "fatty_liver_disease": {
+      "symptoms": ["fatigue", "upper right abdominal discomfort", "weight loss"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "hepatologist",
+      "advice": "Lifestyle changes, diet, exercise, medical follow-up."
+    },
+    "jaundice": {
+      "symptoms": ["yellowing of eyes and skin", "dark urine", "fatigue", "abdominal pain"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "hepatologist",
+      "advice": "Medical evaluation to identify underlying cause."
+    },
+    "hemorrhoids": {
+      "symptoms": ["pain during defecation", "bleeding", "swelling in anal area", "itching"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "High-fiber diet, hydration, topical treatments."
+    },
+    "stomach pain": {
+      "symptoms": ["persistent stomach pain", "nausea", "vomiting", "weight loss", "loss of appetite"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gastroenterologist",
+      "advice": "Immediate medical evaluation required."
+    },
+    "acne": {
+      "symptoms": ["pimples", "blackheads", "whiteheads", "redness", "inflammation"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Maintain facial hygiene, avoid oily foods, topical creams if needed."
+    },
+    "eczema": {
+      "symptoms": ["itchy skin", "redness", "dry patches", "inflammation"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Moisturizers, avoid irritants, topical corticosteroids if prescribed."
+    },
+    "psoriasis": {
+      "symptoms": ["red scaly patches", "itching", "skin thickening", "flaking"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "dermatologist",
+      "advice": "Topical treatments, phototherapy, systemic medication if severe."
+    },
+    "dermatitis": {
+      "symptoms": ["redness", "itching", "swelling", "rash"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Avoid triggers, moisturize, topical creams if needed."
+    },
+    "skin_allergy": {
+      "symptoms": ["rash", "itching", "redness", "hives"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Avoid allergens, antihistamines if needed."
+    },
+    "ringworm": {
+      "symptoms": ["circular rash", "itching", "redness", "scaly skin"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Topical antifungal creams, hygiene maintenance."
+    },
+    "scabies": {
+      "symptoms": ["intense itching", "burrow marks", "rash", "red bumps"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "dermatologist",
+      "advice": "Prescription topical treatment needed."
+    },
+    "vitiligo": {
+      "symptoms": ["patchy loss of skin pigmentation", "white spots on skin"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "dermatologist",
+      "advice": "Medical evaluation, topical or light therapy treatments."
+    },
+    "melasma": {
+      "symptoms": ["brown patches on skin", "sun-exposed areas affected"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Sun protection, topical creams if advised."
+    },
+    "skin cancer": {
+      "symptoms": ["new skin growth", "non-healing sores", "bleeding lesions"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate medical evaluation required."
+    },
+    "shingles": {
+      "symptoms": ["painful rash", "blisters", "tingling sensation", "fever"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "dermatologist",
+      "advice": "Medical evaluation; antiviral treatment may be prescribed."
+    },
+    "chickenpox_scars": {
+      "symptoms": ["pitted scars", "discoloration", "skin texture changes"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Cosmetic treatments or dermatology consultation if desired."
+    },
+    "measles_rash": {
+      "symptoms": ["red blotchy rash", "fever", "cough", "conjunctivitis"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate medical care required."
+    },
+    "warts": {
+      "symptoms": ["small skin growths", "rough surface", "pain or discomfort in pressure areas"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Topical treatments, cryotherapy if needed."
+    },
+    "hives": {
+      "symptoms": ["raised itchy welts", "redness", "swelling", "allergic reaction"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Avoid triggers, antihistamines if required."
+    },
+    "arthritis": {
+      "symptoms": ["joint pain", "swelling", "stiffness", "reduced mobility"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "rheumatologist",
+      "advice": "Medical evaluation; anti-inflammatory medications, physiotherapy."
+    },
+    "osteoarthritis": {
+      "symptoms": ["joint pain", "stiffness", "reduced flexibility", "crepitus"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "orthopedic",
+      "advice": "Lifestyle management, physiotherapy, medications as prescribed."
+    },
+    "rheumatoid_arthritis": {
+      "symptoms": ["joint pain", "swelling", "morning stiffness", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "rheumatologist",
+      "advice": "Medical evaluation, disease-modifying medications."
+    },
+    "osteoporosis": {
+      "symptoms": ["bone fragility", "fractures", "height loss", "back pain"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "orthopedic",
+      "advice": "Calcium, vitamin D supplementation, bone density monitoring."
+    },
+    "gout": {
+      "symptoms": ["joint pain", "redness", "swelling", "sudden attacks"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "rheumatologist",
+      "advice": "Avoid purine-rich foods, prescribed medications if diagnosed."
+    },
+    "back_pain": {
+      "symptoms": ["lower back pain", "stiffness", "muscle spasms"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Rest, gentle exercises, heat or cold therapy, analgesics if needed."
+    },
+    "neck_pain": {
+      "symptoms": ["stiff neck", "pain", "limited motion"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Stretching, posture correction, analgesics if needed."
+    },
+    "sciatica": {
+      "symptoms": ["leg pain", "numbness", "lower back pain radiating to leg"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "orthopedic",
+      "advice": "Medical evaluation; physiotherapy, medications."
+    },
+    "slipped_disc": {
+      "symptoms": ["severe back pain", "radiating leg pain", "numbness", "weakness"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "orthopedic",
+      "advice": "Medical evaluation; imaging and treatment plan."
+    },
+    "muscle_cramps": {
+      "symptoms": ["sudden muscle pain", "tightening", "involuntary contractions"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Stretching, hydration, electrolyte management."
+    },
+    "sprain": {
+      "symptoms": ["joint pain", "swelling", "bruising", "limited mobility"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Rest, ice, compression, elevation (RICE)."
+    },
+    "tendinitis": {
+      "symptoms": ["pain", "swelling", "tenderness near tendon", "stiffness"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "orthopedic",
+      "advice": "Rest, anti-inflammatory medication, physiotherapy."
+    },
+    "carpal tunnel_syndrome": {
+      "symptoms": ["hand numbness", "tingling", "pain in wrist and hand", "weak grip"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "orthopedic",
+      "advice": "Wrist splints, activity modification, medical evaluation."
+    },
+    "fibromyalgia": {
+      "symptoms": ["widespread pain", "fatigue", "sleep disturbances", "cognitive issues"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "rheumatologist",
+      "advice": "Medical evaluation; pain management, exercise, sleep hygiene."
+    },
+    "scoliosis": {
+      "symptoms": ["abnormal spinal curvature", "uneven shoulders", "back pain"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "orthopedic",
+      "advice": "Medical evaluation; braces or surgery if required."
+    },
+    "hypertension": {
+      "symptoms": ["headache", "dizziness", "chest pain", "blurred vision"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "cardiologist",
+      "advice": "Medical evaluation, lifestyle modifications, antihypertensive medications."
+    },
+    "hypotension": {
+      "symptoms": ["dizziness", "fainting", "fatigue", "blurred vision"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "cardiologist",
+      "advice": "Hydration, dietary modifications, medical evaluation."
+    },
+    "heart_attack": {
+      "symptoms": ["chest pain", "shortness of breath", "sweating", "nausea"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospitalization and cardiac care required."
+    },
+    "stroke": {
+      "symptoms": ["sudden weakness", "face drooping", "speech difficulty", "confusion"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate medical attention required."
+    },
+    "arrhythmia": {
+      "symptoms": ["palpitations", "irregular heartbeat", "dizziness", "fainting"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "cardiologist",
+      "advice": "Medical evaluation, ECG, medications if prescribed."
+    },
+    "atrial_fibrillation": {
+      "symptoms": ["irregular heartbeat", "palpitations", "fatigue", "shortness of breath"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "cardiologist",
+      "advice": "Medical evaluation; anticoagulants and rhythm management."
+    },
+    "angina": {
+      "symptoms": ["chest discomfort", "shortness of breath", "fatigue", "pain on exertion"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "cardiologist",
+      "advice": "Medical evaluation; lifestyle changes and medication."
+    },
+    "congenital_heart_disease": {
+      "symptoms": ["cyanosis", "breathlessness", "poor growth", "fatigue"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate cardiology evaluation required."
+    },
+    "heart_failure": {
+      "symptoms": ["shortness of breath", "swelling in legs", "fatigue", "coughing blood-tinged fluid"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Urgent medical attention required."
+    },
+    "peripheral_artery_disease": {
+      "symptoms": ["leg pain while walking", "cold feet", "slow-healing wounds"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "cardiologist",
+      "advice": "Medical evaluation; lifestyle and medication management."
+    },
+    "atherosclerosis": {
+      "symptoms": ["chest pain", "shortness of breath", "fatigue", "cold extremities"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "cardiologist",
+      "advice": "Medical evaluation; cholesterol management."
+    },
+    "endocarditis": {
+      "symptoms": ["fever", "chills", "heart murmur", "fatigue"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospitalization and antibiotics required."
+    },
+    "cardiomyopathy": {
+      "symptoms": ["shortness of breath", "swelling", "fatigue", "arrhythmia"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "cardiologist",
+      "advice": "Medical evaluation; medication and monitoring."
+    },
+    "mitral_valve_prolapse": {
+      "symptoms": ["palpitations", "chest pain", "fatigue", "dizziness"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "cardiologist",
+      "advice": "Medical evaluation; monitoring and medications if needed."
+    },
+    "deep_vein_thrombosis": {
+      "symptoms": ["leg swelling", "pain", "warmth", "redness"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate anticoagulation therapy required."
+    },
+    "diabetes_type_1": {
+      "symptoms": ["frequent urination", "thirst", "fatigue", "weight loss"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "endocrinologist",
+      "advice": "Medical evaluation; insulin therapy."
+    },
+    "diabetes_type_2": {
+      "symptoms": ["frequent urination", "thirst", "fatigue", "blurred vision"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "endocrinologist",
+      "advice": "Medical evaluation; diet, exercise, oral medications."
+    },
+    "hypothyroidism": {
+      "symptoms": ["fatigue", "weight gain", "cold intolerance", "hair loss"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "endocrinologist",
+      "advice": "Medical evaluation; hormone replacement therapy."
+    },
+    "hyperthyroidism": {
+      "symptoms": ["weight loss", "heat intolerance", "palpitations", "anxiety"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "endocrinologist",
+      "advice": "Medical evaluation; medications or radioiodine therapy."
+    },
+    "goiter": {
+      "symptoms": ["swelling in neck", "difficulty swallowing", "cough", "hoarseness"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "endocrinologist",
+      "advice": "Medical evaluation; iodine supplementation or surgery if needed."
+    },
+    "cushing_syndrome": {
+      "symptoms": ["weight gain", "round face", "fatty hump", "high blood pressure"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "endocrinologist",
+      "advice": "Medical evaluation; medications or surgery."
+    },
+    "addisons_disease": {
+      "symptoms": ["fatigue", "weight loss", "low blood pressure", "hyperpigmentation"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "endocrinologist",
+      "advice": "Medical evaluation; hormone replacement therapy."
+    },
+    "epilepsy": {
+      "symptoms": ["recurrent seizures", "loss of consciousness", "confusion", "staring spells"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "neurologist",
+      "advice": "Medical evaluation; anticonvulsant medications."
+    },
+    "migraine_with_aura": {
+      "symptoms": ["severe headache", "visual disturbances", "nausea", "sensitivity to light/sound"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Rest in dark room, hydration, medications if prescribed."
+    },
+    "parkinsons_disease": {
+      "symptoms": ["tremors", "rigidity", "slow movements", "balance issues"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "neurologist",
+      "advice": "Medical evaluation; medications and physiotherapy."
+    },
+    "alzheimers_disease": {
+      "symptoms": ["memory loss", "confusion", "difficulty performing tasks", "behavioral changes"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "neurologist",
+      "advice": "Medical evaluation; cognitive therapy and medications."
+    },
+    "malaria": {
+      "symptoms": ["fever", "chills", "sweating", "headache", "nausea"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate medical evaluation; antimalarial medications."
+    },
+    "dengue": {
+      "symptoms": ["high fever", "headache", "joint pain", "rash", "nausea"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospitalization recommended; hydration and monitoring."
+    },
+    "chikungunya": {
+      "symptoms": ["fever", "joint pain", "rash", "muscle pain", "headache"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "general_physician",
+      "advice": "Hydration, rest, pain relief medications."
+    },
+    "typhoid": {
+      "symptoms": ["prolonged fever", "abdominal pain", "diarrhea or constipation", "headache"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Hospitalization for antibiotics required."
+    },
+    "cholera": {
+      "symptoms": ["profuse watery diarrhea", "dehydration", "vomiting", "muscle cramps"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate rehydration and medical treatment."
+    },
+    "leptospirosis": {
+      "symptoms": ["fever", "headache", "muscle aches", "jaundice"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "infectious_disease",
+      "advice": "Medical evaluation; antibiotics if required."
+    },
+    "zika_virus": {
+      "symptoms": ["fever", "rash", "joint pain", "red eyes"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "infectious_disease",
+      "advice": "Rest, hydration; medical evaluation for confirmation."
+    },
+    "yellow_fever": {
+      "symptoms": ["fever", "jaundice", "muscle pain", "nausea", "vomiting"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospitalization required."
+    },
+    "rabies": {
+      "symptoms": ["fever", "anxiety", "confusion", "hydrophobia", "drooling"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate post-exposure prophylaxis required."
+    },
+    "h1n1": {
+      "symptoms": ["fever", "cough", "sore throat", "body ache", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "general_physician",
+      "advice": "Medical evaluation; antivirals if prescribed."
+    },
+    "covid_19": {
+      "symptoms": ["fever", "cough", "shortness of breath", "fatigue", "loss of taste/smell"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "general_physician",
+      "advice": "Isolation, supportive care; medical evaluation if severe."
+    },
+    "sars": {
+      "symptoms": ["fever", "cough", "shortness of breath", "body aches"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate medical attention required."
+    },
+    "mers": {
+      "symptoms": ["fever", "cough", "shortness of breath", "pneumonia"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospitalization required."
+    },
+    "hiv_aids": {
+      "symptoms": ["fatigue", "weight loss", "fever", "swollen lymph nodes"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "infectious_disease",
+      "advice": "Medical evaluation; antiretroviral therapy."
+    },
+    "sti": {
+      "symptoms": ["painful urination", "unusual discharge", "genital sores", "itching"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gynecologist/urologist",
+      "advice": "Medical evaluation; testing and treatment."
+    },
+    "kidney_stones": {
+      "symptoms": ["severe flank pain", "blood in urine", "nausea", "vomiting"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate medical care; imaging and treatment required."
+    },
+    "urinary_tract_infection": {
+      "symptoms": ["burning urination", "frequent urination", "lower abdominal pain", "cloudy urine"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "urologist",
+      "advice": "Medical evaluation; antibiotics if prescribed."
+    },
+    "chronic_kidney_disease": {
+      "symptoms": ["fatigue", "swelling in legs", "changes in urination", "nausea"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "nephrologist",
+      "advice": "Medical evaluation; lifestyle changes and medications."
+    },
+    "acute_kidney_injury": {
+      "symptoms": ["decreased urine output", "swelling", "confusion", "nausea"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate medical attention required."
+    },
+    "polycystic_kidney_disease": {
+      "symptoms": ["high blood pressure", "flank pain", "urinary tract infections", "kidney enlargement"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "nephrologist",
+      "advice": "Medical evaluation; monitoring and management."
+    },
+    "nephritis": {
+      "symptoms": ["blood in urine", "swelling", "high blood pressure", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "nephrologist",
+      "advice": "Medical evaluation; treatment depending on cause."
+    },
+    "bladder_infection": {
+      "symptoms": ["painful urination", "frequent urination", "lower abdominal discomfort"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "urologist",
+      "advice": "Antibiotics if prescribed."
+    },
+    "prostate_enlargement": {
+      "symptoms": ["difficulty urinating", "weak urine stream", "frequent urination"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "urologist",
+      "advice": "Medical evaluation; medications or procedures if required."
+    },
+    "conjunctivitis": {
+      "symptoms": ["red eyes", "itching eyes", "tearing", "discharge"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Use artificial tears, maintain eye hygiene. Optional: Antibiotic drops if bacterial."
+    },
+    "cataract": {
+      "symptoms": ["blurred vision", "difficulty seeing at night", "faded colors"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ophthalmologist",
+      "advice": "Medical evaluation; surgery may be recommended."
+    },
+    "glaucoma": {
+      "symptoms": ["vision loss", "eye pain", "blurred vision", "halos around lights"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate ophthalmologist evaluation required."
+    },
+    "dry_eye_syndrome": {
+      "symptoms": ["dry eyes", "burning sensation", "itching", "redness"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Artificial tears, avoid dry environments."
+    },
+    "refractive_error": {
+      "symptoms": ["blurred vision", "difficulty focusing", "eye strain"],
+      "category": "general",
+      "action": "book_appointment",
+      "specialist": "ophthalmologist",
+      "advice": "Prescription glasses or contact lenses."
+    },
+    "astigmatism": {
+      "symptoms": ["blurred vision", "distorted vision", "headache"],
+      "category": "general",
+      "action": "book_appointment",
+      "specialist": "ophthalmologist",
+      "advice": "Corrective lenses or surgery."
+    },
+    "amd": {
+      "symptoms": ["central vision loss", "blurred vision", "difficulty recognizing faces"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ophthalmologist",
+      "advice": "Medical evaluation; supplements or therapy may be advised."
+    },
+    "diabetic_retinopathy": {
+      "symptoms": ["blurred vision", "floaters", "vision loss"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ophthalmologist",
+      "advice": "Regular eye exams; manage blood sugar; treatment may include laser therapy."
+    },
+    "retinal_detachment": {
+      "symptoms": ["sudden vision loss", "floaters", "flashes of light"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate surgical intervention required."
+    },
+    "night_blindness": {
+      "symptoms": ["difficulty seeing in dim light", "poor night vision"],
+      "category": "general",
+      "action": "book_appointment",
+      "specialist": "ophthalmologist",
+      "advice": "Medical evaluation; vitamin A deficiency management if required."
+    },
+    "color_blindness": {
+      "symptoms": ["difficulty distinguishing colors"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Usually genetic; use color aids if needed."
+    },
+    "eye_strain": {
+      "symptoms": ["tired eyes", "headache", "blurred vision after reading or screen use"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Take breaks, adjust screen brightness, use eye exercises."
+    },
+    "keratoconjunctivitis": {
+      "symptoms": ["red eyes", "dry eyes", "pain", "blurred vision"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ophthalmologist",
+      "advice": "Medical evaluation; artificial tears or medications as advised."
+    },
+    "corneal_ulcer": {
+      "symptoms": ["eye pain", "redness", "blurred vision", "discharge"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate ophthalmologist evaluation required."
+    },
+    "amblyopia": {
+      "symptoms": ["lazy eye", "reduced vision in one eye"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ophthalmologist",
+      "advice": "Eye patching, vision therapy."
+    },
+    "otitis_media": {
+      "symptoms": ["ear pain", "fever", "hearing loss", "fluid drainage"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Medical evaluation; antibiotics if needed."
+    },
+    "tinnitus": {
+      "symptoms": ["ringing in ears", "headache", "stress"],
+      "category": "general",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Avoid loud noise; ENT evaluation for treatment."
+    },
+    "hearing_loss": {
+      "symptoms": ["difficulty hearing", "muffled sounds"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Medical evaluation; hearing aids if necessary."
+    },
+    "vertigo": {
+      "symptoms": ["spinning sensation", "loss of balance", "nausea"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Medical evaluation; vestibular therapy."
+    },
+    "menieres_disease": {
+      "symptoms": ["vertigo", "tinnitus", "hearing loss", "ear fullness"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Medical evaluation; dietary and lifestyle adjustments."
+    },
+    "deviated_nasal_septum": {
+      "symptoms": ["difficulty breathing", "nasal congestion", "nosebleeds"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "ENT evaluation; surgery if required."
+    },
+    "nosebleeds": {
+      "symptoms": ["bleeding from nose", "frequent nosebleeds"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Pinch nose, lean forward; ENT evaluation if recurrent."
+    },
+    "laryngitis": {
+      "symptoms": ["hoarseness", "sore throat", "dry cough"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Voice rest, hydration; medical evaluation if persistent."
+    },
+    "swimmers_ear": {
+      "symptoms": ["ear pain", "itching", "discharge"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Medical evaluation; antibiotic drops if needed."
+    },
+    "infertility_male": {
+      "symptoms": ["difficulty conceiving", "low sperm count", "erectile issues"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "urologist",
+      "advice": "Medical evaluation; testing and treatment."
+    },
+    "infertility_female": {
+      "symptoms": ["difficulty conceiving", "irregular periods", "hormonal imbalance"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gynecologist",
+      "advice": "Medical evaluation; treatment options available."
+    },
+    "endometriosis": {
+      "symptoms": ["pelvic pain", "painful periods", "infertility", "pain during intercourse"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gynecologist",
+      "advice": "Medical evaluation; medications or surgery may be required."
+    },
+    "fibroids": {
+      "symptoms": ["heavy periods", "pelvic pain", "frequent urination", "abdominal swelling"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gynecologist",
+      "advice": "Monitoring, medications, or surgical options."
+    },
+    "ovarian_cysts": {
+      "symptoms": ["pelvic pain", "bloating", "irregular periods", "pain during intercourse"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gynecologist",
+      "advice": "Medical evaluation; ultrasound monitoring or surgery."
+    },
+    "menstrual_cramps": {
+      "symptoms": ["abdominal pain", "back pain", "nausea", "bloating"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Pain relief medications, heat application, rest."
+    },
+    "pms": {
+      "symptoms": ["mood swings", "bloating", "breast tenderness", "fatigue"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Lifestyle changes, rest, over-the-counter medications if needed."
+    },
+    "anemia_iron_deficiency": {
+      "symptoms": ["fatigue", "pale skin", "shortness of breath", "dizziness"],
+      "category": "general",
+      "action": "book_appointment",
+      "specialist": "general_physician",
+      "advice": "Iron supplements and diet evaluation."
+    },
+    "sickle_cell_anemia": {
+      "symptoms": ["pain episodes", "fatigue", "swelling in hands/feet", "frequent infections"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "hematologist",
+      "advice": "Medical management and monitoring required."
+    },
+    "thalassemia": {
+      "symptoms": ["fatigue", "pale skin", "slow growth", "bone deformities"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "hematologist",
+      "advice": "Regular blood transfusions and monitoring."
+    },
+    "leukemia": {
+      "symptoms": ["fatigue", "frequent infections", "easy bruising", "weight loss"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospitalization required."
+    },
+    "lymphoma": {
+      "symptoms": ["swollen lymph nodes", "fever", "night sweats", "weight loss"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "oncologist",
+      "advice": "Medical evaluation for biopsy and treatment."
+    },
+    "hemophilia": {
+      "symptoms": ["excessive bleeding", "joint pain", "easy bruising"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "hematologist",
+      "advice": "Medical management with clotting factor therapy."
+    },
+    "immune_thrombocytopenia": {
+      "symptoms": ["easy bruising", "bleeding gums", "petechiae"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "hematologist",
+      "advice": "Medical evaluation required."
+    },
+    "autoimmune_disorders": {
+      "symptoms": ["fatigue", "joint pain", "fever", "rash"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "rheumatologist",
+      "advice": "Medical evaluation and management."
+    },
+    "lupus": {
+      "symptoms": ["butterfly rash", "joint pain", "fatigue", "fever"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "rheumatologist",
+      "advice": "Medical management required."
+    },
+    "rheumatic_fever": {
+      "symptoms": ["fever", "joint pain", "heart inflammation", "rash"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospital treatment required."
+    },
+    "lung_cancer": {
+      "symptoms": ["persistent cough", "chest pain", "weight loss", "shortness of breath"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Urgent medical evaluation required."
+    },
+    "stomach_cancer": {
+      "symptoms": ["abdominal pain", "nausea", "vomiting", "weight loss"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "oncologist",
+      "advice": "Medical evaluation and diagnostic tests."
+    },
+    "colon_cancer": {
+      "symptoms": ["blood in stool", "change in bowel habits", "abdominal pain", "weight loss"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "oncologist",
+      "advice": "Screening and treatment as per diagnosis."
+    },
+    "liver_cancer": {
+      "symptoms": ["abdominal pain", "jaundice", "weight loss", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "oncologist",
+      "advice": "Immediate evaluation recommended."
+    },
+    "pancreatic_cancer": {
+      "symptoms": ["upper abdominal pain", "weight loss", "jaundice", "loss of appetite"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate medical attention required."
+    },
+    "kidney_cancer": {
+      "symptoms": ["blood in urine", "flank pain", "weight loss", "fever"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "oncologist",
+      "advice": "Medical evaluation required."
+    },
+    "bladder_cancer": {
+      "symptoms": ["blood in urine", "frequent urination", "pain during urination"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "oncologist",
+      "advice": "Medical evaluation required."
+    },
+    "breast_cancer": {
+      "symptoms": ["lump in breast", "skin dimpling", "nipple discharge", "breast pain"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "oncologist",
+      "advice": "Mammogram and medical evaluation."
+    },
+    "ovarian_cancer": {
+      "symptoms": ["abdominal bloating", "pelvic pain", "frequent urination", "weight loss"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "oncologist",
+      "advice": "Medical evaluation and imaging required."
+    },
+    "cervical_cancer": {
+      "symptoms": ["abnormal bleeding", "pelvic pain", "unusual discharge"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "gynecologist/oncologist",
+      "advice": "Pap smear and further testing."
+    },
+    "prostate_cancer": {
+      "symptoms": ["difficulty urinating", "blood in urine", "pelvic discomfort"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "urologist/oncologist",
+      "advice": "PSA testing and evaluation."
+    },
+    "testicular_cancer": {
+      "symptoms": ["lump in testicle", "pain", "swelling", "heaviness"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "urologist/oncologist",
+      "advice": "Medical evaluation required."
+    },
+    "brain_cancer": {
+      "symptoms": ["headache", "nausea", "vision changes", "seizures"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospitalization required."
+    },
+    "bone_cancer": {
+      "symptoms": ["bone pain", "swelling", "fractures", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "oncologist",
+      "advice": "Medical evaluation required."
+    },
+    "skin_cancer": {
+      "symptoms": ["new skin lesion", "change in mole", "non-healing sore"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "dermatologist/oncologist",
+      "advice": "Dermatologic evaluation required."
+    },
+    "chickenpox": {
+      "symptoms": ["fever", "itchy rash", "fatigue", "blisters"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Hydration, calamine lotion, rest."
+    },
+    "measles": {
+      "symptoms": ["fever", "cough", "red rash", "conjunctivitis"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Hydration, fever management; isolation to prevent spread."
+    },
+    "mumps": {
+      "symptoms": ["swollen cheeks/jaw", "fever", "headache", "muscle pain"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Hydration, rest, pain relief if needed."
+    },
+    "rubella": {
+      "symptoms": ["mild fever", "rash", "swollen lymph nodes"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Rest, hydration; isolation recommended."
+    },
+    "hand_foot_mouth_disease": {
+      "symptoms": ["fever", "mouth sores", "rash on hands/feet"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Hydration, pain relief, topical creams."
+    },
+    "whooping  cough": {
+      "symptoms": ["severe coughing fits", "whoop sound", "vomiting after cough"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate medical evaluation required."
+    },
+    "scarlet_fever": {
+      "symptoms": ["fever", "red rash", "sore throat", "strawberry tongue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "pediatrician",
+      "advice": "Antibiotics if bacterial; medical evaluation required."
+    },
+    "fifth_disease": {
+      "symptoms": ["fever", "rash on face", "mild fatigue", "joint pain"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Rest, hydration, and fever management."
+    },
+    "croup": {
+      "symptoms": ["barking cough", "hoarseness", "stridor", "difficulty breathing"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "pediatrician",
+      "advice": "Humidified air, hydration; medical evaluation recommended."
+    },
+    "kawasaki_disease": {
+      "symptoms": ["fever", "rash", "swollen hands/feet", "red eyes", "strawberry tongue"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospitalization required."
+    },
+    "sjogrens_syndrome": {
+      "symptoms": ["dry eyes", "dry mouth", "joint pain", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "rheumatologist",
+      "advice": "Medical evaluation and management."
+    },
+    "hashimotos_thyroiditis": {
+      "symptoms": ["fatigue", "weight gain", "cold intolerance", "swelling in neck"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "endocrinologist",
+      "advice": "Thyroid function testing and medication."
+    },
+    "graves_disease": {
+      "symptoms": ["weight loss", "heat intolerance", "palpitations", "eye bulging"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "endocrinologist",
+      "advice": "Thyroid evaluation and treatment."
+    },
+    "myasthenia_gravis": {
+      "symptoms": ["muscle weakness", "drooping eyelids", "difficulty swallowing", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "neurologist",
+      "advice": "Medical evaluation and therapy."
+    },
+    "ankylosing_spondylitis": {
+      "symptoms": ["back pain", "stiffness", "reduced mobility", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "rheumatologist",
+      "advice": "Medical management required."
+    },
+    "vasculitis": {
+      "symptoms": ["fever", "weight loss", "fatigue", "rash", "joint pain"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "rheumatologist",
+      "advice": "Medical evaluation required."
+    },
+    "sarcoidosis": {
+      "symptoms": ["shortness of breath", "persistent cough", "skin lesions", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "pulmonologist",
+      "advice": "Medical evaluation required."
+    },
+    "scleroderma": {
+      "symptoms": ["skin thickening", "joint pain", "swelling", "Raynaud's phenomenon"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "rheumatologist",
+      "advice": "Medical management required."
+    },
+    "behcets_disease": {
+      "symptoms": ["mouth ulcers", "genital ulcers", "eye inflammation", "skin lesions"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "rheumatologist",
+      "advice": "Medical evaluation required."
+    },
+    "wilson_disease": {
+      "symptoms": ["fatigue", "jaundice", "tremors", "difficulty speaking"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospital evaluation required."
+    },
+    "rickets": {
+      "symptoms": ["bone pain", "delayed growth", "bowed legs", "muscle weakness"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "pediatrician",
+      "advice": "Vitamin D and calcium supplementation."
+    },
+    "scurvy": {
+      "symptoms": ["bleeding gums", "bruising", "fatigue", "joint pain"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "general_physician",
+      "advice": "Vitamin C supplementation."
+    },
+    "beriberi": {
+      "symptoms": ["weakness", "swelling", "nerve damage", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "general_physician",
+      "advice": "Vitamin B1 supplementation."
+    },
+    "pellagra": {
+      "symptoms": ["dermatitis", "diarrhea", "dementia", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "general_physician",
+      "advice": "Niacin supplementation and diet improvement."
+    },
+    "kwashiorkor": {
+      "symptoms": ["edema", "muscle wasting", "skin lesions", "fatigue"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate nutritional support required."
+    },
+    "obesity": {
+      "symptoms": ["excess body weight", "fatigue", "joint pain", "shortness of breath"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "nutritionist",
+      "advice": "Diet, exercise, lifestyle changes."
+    },
+    "metabolic_syndrome": {
+      "symptoms": ["high blood pressure", "high blood sugar", "obesity", "abnormal cholesterol"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "general_physician",
+      "advice": "Lifestyle modification and medical evaluation."
+    },
+    "hypercholesterolemia": {
+      "symptoms": ["high cholesterol", "fatty deposits", "cardiovascular risk"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "cardiologist",
+      "advice": "Diet, medications if prescribed."
+    },
+    "carpal_tunnel_syndrome": {
+      "symptoms": ["hand numbness", "tingling fingers", "pain in wrist"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "orthopedic",
+      "advice": "Wrist splints, physiotherapy, evaluation."
+    },
+    "tennis_elbow": {
+      "symptoms": ["elbow pain", "weak grip", "tenderness"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "orthopedic",
+      "advice": "Rest, physiotherapy, pain management."
+    },
+    "computer_vision_syndrome": {
+      "symptoms": ["eye strain", "headache", "blurred vision", "dry eyes"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Screen breaks, ergonomic adjustments, eye exercises."
+    },
+    "jet_lag_disorder": {
+      "symptoms": ["fatigue", "sleep disruption", "irritability", "digestive issues"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Sleep management, hydration, gradual adaptation."
+    },
+    "noise_induced_hearing_loss": {
+      "symptoms": ["hearing difficulty", "tinnitus", "sensitivity to sound"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Hearing tests, ear protection, management."
+    },
+    "work_related_stress_disorder": {
+      "symptoms": ["fatigue", "irritability", "sleep issues", "anxiety"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "psychologist",
+      "advice": "Stress management, therapy, lifestyle changes."
+    },
+    "chronic_fatigue_syndrome": {
+      "symptoms": ["severe fatigue", "sleep disturbance", "pain", "cognitive issues"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "general_physician",
+      "advice": "Medical evaluation, lifestyle adjustments."
+    },
+    "overuse_injury": {
+      "symptoms": ["pain in affected area", "swelling", "reduced mobility"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "orthopedic",
+      "advice": "Rest, physiotherapy, evaluation."
+    },
+    "smoking_related_lung_disease": {
+      "symptoms": ["shortness of breath", "chronic cough", "wheezing", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "pulmonologist",
+      "advice": "Smoking cessation, medical evaluation."
+    },
+    "poisoning": {
+      "symptoms": ["vomiting", "abdominal pain", "confusion", "breathing difficulty"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospital care required."
+    },
+    "snake_bite": {
+      "symptoms": ["pain at bite site", "swelling", "nausea", "difficulty breathing"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Urgent medical care, anti-venom may be needed."
+    },
+    "dog_bite_infection": {
+      "symptoms": ["wound", "redness", "swelling", "fever"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate evaluation, vaccination, antibiotics."
+    },
+    "radiation_sickness": {
+      "symptoms": ["nausea", "vomiting", "weakness", "hair loss", "bleeding"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospitalization required."
+    },
+    "frostbite": {
+      "symptoms": ["numbness", "skin discoloration", "pain", "blisters"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Move to warm area, seek urgent care."
+    },
+    "marfan_syndrome": {
+      "symptoms": ["tall stature", "long limbs", "heart murmur", "vision problems"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "geneticist",
+      "advice": "Cardiac monitoring, genetic counseling."
+    },
+    "turner_syndrome": {
+      "symptoms": ["short stature", "webbed neck", "ovarian failure", "heart defects"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "geneticist",
+      "advice": "Hormone therapy and regular health checks."
+    },
+    "down_syndrome": {
+      "symptoms": ["distinct facial features", "developmental delays", "heart defects"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "pediatrician",
+      "advice": "Early intervention, therapy, and medical monitoring."
+    },
+    "klinefelter_syndrome": {
+      "symptoms": ["tall stature", "small testes", "low testosterone", "infertility"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "endocrinologist",
+      "advice": "Hormone therapy, fertility evaluation."
+    },
+    "huntingtons_disease": {
+      "symptoms": ["involuntary movements", "cognitive decline", "mood changes"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "neurologist",
+      "advice": "Neurological evaluation, genetic counseling."
+    },
+    "tay_sachs_disease": {
+      "symptoms": ["muscle weakness", "developmental delay", "seizures", "vision/hearing loss"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate specialized care required."
+    },
+    "cystic_fibrosis": {
+      "symptoms": ["chronic cough", "lung infections", "poor weight gain", "salty skin"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Medical management at specialized center."
+    },
+    "duchenne_muscular_dystrophy": {
+      "symptoms": ["muscle weakness", "frequent falls", "difficulty walking", "heart problems"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "neurologist",
+      "advice": "Physical therapy, cardiac monitoring."
+    },
+    "phenylketonuria": {
+      "symptoms": ["developmental delay", "musty odor", "eczema", "seizures"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "geneticist",
+      "advice": "Dietary management and metabolic monitoring."
+    },
+    "hemochromatosis": {
+      "symptoms": ["fatigue", "joint pain", "abdominal pain", "bronze skin"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "hepatologist",
+      "advice": "Blood tests, phlebotomy, and monitoring."
+    },
+    "alpha1_antitrypsin_deficiency": {
+      "symptoms": ["shortness of breath", "liver disease", "chronic cough", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "pulmonologist",
+      "advice": "Lung/liver monitoring and treatment."
+    },
+    "prader_willi_syndrome": {
+      "symptoms": ["excessive appetite", "low muscle tone", "short stature", "behavioral issues"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "pediatrician",
+      "advice": "Behavioral therapy, diet management, and monitoring."
+    },
+    "ehlers_danlos_syndrome": {
+      "symptoms": ["hypermobile joints", "skin hyperextensibility", "easy bruising", "chronic pain"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "geneticist",
+      "advice": "Joint care, physiotherapy, and monitoring."
+    },
+    "rett_syndrome": {
+      "symptoms": ["developmental regression", "hand-wringing", "loss of speech", "seizures"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate neurological care recommended."
+    },
+    "fragile_x_syndrome": {
+      "symptoms": ["developmental delays", "behavioral issues", "learning disabilities", "speech delays"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "geneticist",
+      "advice": "Therapy, educational support, and monitoring."
+    },
+    "angelman_syndrome": {
+      "symptoms": ["seizures", "developmental delay", "happy demeanor", "speech impairment"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "neurologist",
+      "advice": "Therapy, seizure management, and monitoring."
+    },
+    "pompe_disease": {
+      "symptoms": ["muscle weakness", "respiratory problems", "feeding difficulties", "fatigue"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate specialized care required."
+    },
+    "fabry_disease": {
+      "symptoms": ["burning pain in hands/feet", "sweating abnormalities", "kidney issues", "skin lesions"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "geneticist",
+      "advice": "Enzyme replacement therapy and monitoring."
+    },
+    "gaucher_disease": {
+      "symptoms": ["enlarged liver/spleen", "fatigue", "bone pain", "anemia"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "hematologist",
+      "advice": "Enzyme therapy and regular follow-up."
+    },
+    "krabbe_disease": {
+      "symptoms": ["muscle rigidity", "developmental delay", "irritability", "feeding difficulties"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate specialized care required."
+    },
+    "maple_syrup_urine_disease": {
+      "symptoms": ["sweet-smelling urine", "vomiting", "lethargy", "poor feeding"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate metabolic intervention required."
+    },
+    "niemann_pick_disease": {
+      "symptoms": ["hepatosplenomegaly", "developmental delay", "muscle weakness", "feeding difficulties"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate hospital care required."
+    },
+    "zellweger_syndrome": {
+      "symptoms": ["developmental delay", "hypotonia", "liver dysfunction", "facial abnormalities"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate medical care required."
+    },
+    "edwards_syndrome": {
+      "symptoms": ["developmental delay", "heart defects", "micrognathia", "clenched fists"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate neonatal care required."
+    },
+    "patau_syndrome": {
+      "symptoms": ["severe developmental delay", "cleft lip/palate", "polydactyly", "heart defects"],
+      "category": "emergency",
+      "action": "call_ambulance",
+      "emergency_number": "108",
+      "advice": "Immediate neonatal care required."
+    },
+    "viral_fever": {
+      "symptoms": ["high fever", "fatigue", "body ache", "headache", "chills"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Rest, hydration, light diet. Optional: Paracetamol for fever."
+    },
+    "dengue_hemorrhagic_fever": {
+      "symptoms": ["high fever", "severe headache", "joint and muscle pain", "rash", "bleeding gums or nose", "low platelet count"],
+      "category": "severe",
+      "action": "seek_medical_attention",
+      "specialist": "Physician",
+      "advice": "Immediate medical attention. Hospitalization may be required for fluid replacement and monitoring."
+    },
+    " chikungunya": {
+      "symptoms": ["sudden high fever", "severe joint pain", "muscle pain", "rash", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Physician",
+      "advice": "Hydration, rest, Paracetamol for pain. Avoid NSAIDs unless prescribed."
+    },
+    "typhus": {
+      "symptoms": ["fever", "headache", "rash", "abdominal pain", "confusion"],
+      "category": "severe",
+      "action": "seek_medical_attention",
+      "specialist": "Infectious Disease Specialist",
+      "advice": "Requires antibiotics and hospitalization."
+    },
+    "hand_foot_mouth_adults": {
+      "symptoms": ["fever", "blisters on hands, feet, mouth", "sore throat", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Physician",
+      "advice": "Hydration, soft foods, pain relievers like Paracetamol if needed."
+    },
+    "viral_gastroenteritis": {
+      "symptoms": ["diarrhea", "vomiting", "abdominal cramps", "fever", "nausea"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Hydration with ORS, rest, light diet. Avoid dairy and oily foods."
+    },
+    "amoebiasis": {
+      "symptoms": ["diarrhea", "abdominal pain", "bloody stools", "weight loss", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Gastroenterologist",
+      "advice": "Hydration, proper sanitation, prescribed anti-amoebic medications."
+    },
+    "giardiasis": {
+      "symptoms": ["diarrhea", "greasy stools", "bloating", "abdominal cramps", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Gastroenterologist",
+      "advice": "Hydration, maintain hygiene, prescribed anti-parasitic medication."
+    },
+    "pinworm_infection": {
+      "symptoms": ["anal itching, especially at night", "restlessness", "irritability"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Maintain hygiene, wash hands, use prescribed anti-parasitic medication."
+    },
+    "tapeworm_infection": {
+      "symptoms": ["weight loss", "abdominal discomfort", "nausea", "visible segments in stool"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Gastroenterologist",
+      "advice": "Anti-parasitic medication under medical supervision."
+    },
+    "roundworm_infection": {
+      "symptoms": ["abdominal pain", "vomiting", "weight loss", "visible worms in stool"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Gastroenterologist",
+      "advice": "Anti-parasitic medication and hygiene practices."
+    },
+    "hookworm_infection": {
+      "symptoms": ["abdominal pain", "anemia", "fatigue", "weight loss"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Gastroenterologist",
+      "advice": "Iron supplementation, anti-parasitic treatment, avoid barefoot walking in contaminated soil."
+    },
+    "threadworm_infection": {
+      "symptoms": ["anal itching", "restlessness", "irritability"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Hygiene maintenance, washing clothes/beds, prescribed anti-parasitic medication."
+    },
+    "ascariasis": {
+      "symptoms": ["abdominal discomfort", "cough", "weight loss", "visible worms in stool"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Gastroenterologist",
+      "advice": "Anti-parasitic medication and hygiene practices."
+    },
+    "strongyloidiasis": {
+      "symptoms": ["abdominal pain", "diarrhea", "skin rash", "weight loss", "cough"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Gastroenterologist",
+      "advice": "Anti-parasitic medication and monitoring for immunocompromised patients."
+    },
+    "lice_infestation": {
+      "symptoms": ["itching scalp", "visible lice or nits", "red bumps on scalp or neck"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Use medicated lice shampoo, comb hair with fine-toothed comb, wash clothes and bedding in hot water."
+    },
+    "bed_bug_allergy": {
+      "symptoms": ["itchy red welts", "rash in lines or clusters", "swelling"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dermatologist",
+      "advice": "Clean bedding, apply anti-itch creams, oral antihistamines if needed."
+    },
+    "scalp_folliculitis": {
+      "symptoms": ["small red bumps on scalp", "itching or tenderness", "pustules at hair follicles"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dermatologist",
+      "advice": "Keep scalp clean, use antiseptic shampoo, topical antibiotics if prescribed."
+    },
+    "ingrown_toenail": {
+      "symptoms": ["pain along nail edge", "redness", "swelling", "infection"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Podiatrist",
+      "advice": "Soak foot in warm water, avoid tight shoes, consult for nail removal if severe."
+    },
+    "fungal_nail_infection": {
+      "symptoms": ["discolored nails", "thickened nails", "brittle or crumbly nails"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dermatologist",
+      "advice": "Topical antifungal creams or oral antifungal medication, keep nails dry and trimmed."
+    },
+    "cold_sores": {
+      "symptoms": ["painful blisters on lips", "tingling or burning before outbreak", "crusting"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Avoid touching sores, antiviral creams (Acyclovir), maintain oral hygiene."
+    },
+    "genital_herpes": {
+      "symptoms": ["painful blisters in genital area", "itching", "burning sensation during urination"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Physician",
+      "advice": "Antiviral medication prescribed by doctor, maintain hygiene, avoid sexual contact during outbreaks."
+    },
+    "herpangina": {
+      "symptoms": ["fever", "small blister-like ulcers in mouth", "sore throat", "difficulty swallowing"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Hydration, soft diet, Paracetamol for fever or pain."
+    },
+    "thrush_oral_candidiasis": {
+      "symptoms": ["white patches in mouth", "soreness", "difficulty swallowing", "loss of taste"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dentist/Physician",
+      "advice": "Antifungal oral medication, maintain oral hygiene, avoid sugary foods."
+    },
+    "vaginal_yeast_infection": {
+      "symptoms": ["itching", "white discharge", "burning sensation", "irritation"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Gynecologist",
+      "advice": "Topical or oral antifungal medication, maintain hygiene, avoid scented products."
+    },
+    "athletes_foot": {
+      "symptoms": ["itching, burning between toes", "redness", "peeling skin", "foul odor"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Keep feet dry, use antifungal creams, change socks regularly."
+    },
+    "jock_itch": {
+      "symptoms": ["red, itchy rash in groin area", "scaling or flaking skin"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Maintain hygiene, keep area dry, antifungal creams."
+    },
+    "boils": {
+      "symptoms": ["painful red lump", "pus-filled center", "swelling"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dermatologist",
+      "advice": "Warm compress, do not squeeze, antibiotics if infection spreads."
+    },
+    "abscess": {
+      "symptoms": ["painful, swollen lump", "redness", "pus discharge", "fever if severe"],
+      "category": "severe",
+      "action": "seek_medical_attention",
+      "specialist": "Physician",
+      "advice": "Drainage and antibiotics under medical supervision."
+    },
+    "cellulitis": {
+      "symptoms": ["red, swollen, tender skin", "warmth", "fever"],
+      "category": "severe",
+      "action": "seek_medical_attention",
+      "specialist": "Physician",
+      "advice": "Oral or IV antibiotics, monitor for spreading infection."
+    },
+    "impetigo": {
+      "symptoms": ["red sores that ooze and crust", "itching", "spreading rash"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dermatologist",
+      "advice": "Topical or oral antibiotics, keep area clean."
+    },
+    "folliculitis_barbae": {
+      "symptoms": ["red bumps on beard area", "itching", "pus-filled bumps"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Keep area clean, warm compress, topical antibiotics if needed."
+    },
+    "contact_dermatitis": {
+      "symptoms": ["red rash", "itching", "blisters", "swelling"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Avoid irritants, apply moisturizers, antihistamines or mild corticosteroid creams if needed."
+    },
+    "seborrheic_dermatitis": {
+      "symptoms": ["flaky scalp", "redness", "itching", "dandruff"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Use medicated anti-dandruff shampoos, moisturize scalp, avoid harsh products."
+    },
+    "sun_allergy": {
+      "symptoms": ["red rash after sun exposure", "itching", "blisters in severe cases"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dermatologist",
+      "advice": "Avoid sun, use sunscreen, antihistamines or topical corticosteroids if needed."
+    },
+    "heat_rash": {
+      "symptoms": ["small red bumps", "itching", "burning sensation", "sweaty areas affected"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Keep skin cool and dry, loose clothing, calamine lotion."
+    },
+    "chilblains": {
+      "symptoms": ["red or purple patches on fingers/toes", "itching", "pain", "swelling"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Keep extremities warm, avoid sudden temperature changes, topical creams for relief."
+    },
+    "nail_psoriasis": {
+      "symptoms": ["pitting on nails", "discoloration", "thickened nails", "separation from nail bed"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dermatologist",
+      "advice": "Topical treatments, moisturizers, avoid nail trauma."
+    },
+    "keratosis_pilaris": {
+      "symptoms": ["small rough bumps on skin", "dryness", "itching sometimes"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Moisturize skin, gentle exfoliation, use mild soaps."
+    },
+    "corns_calluses": {
+      "symptoms": ["thickened skin on feet/hands", "pain on pressure", "rough texture"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Use protective pads, soak and gently file, avoid tight shoes."
+    },
+    "mouth_ulcers": {
+      "symptoms": ["painful sores inside mouth", "red border with white/yellow center", "difficulty eating or drinking"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Saltwater rinse, topical gels, avoid spicy foods."
+    },
+    "geographic_tongue": {
+      "symptoms": ["map-like patterns on tongue", "smooth red patches", "burning sensation occasionally"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Avoid irritants, maintain oral hygiene, usually self-limiting."
+    },
+    "burning_mouth_syndrome": {
+      "symptoms": ["burning sensation in mouth", "dry mouth", "altered taste", "no visible lesions"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dentist/Physician",
+      "advice": "Maintain hydration, avoid irritants, medications may be prescribed to manage symptoms."
+    },
+    "halitosis": {
+      "symptoms": ["bad breath", "coated tongue", "dry mouth", "unpleasant taste"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Maintain oral hygiene, brush and floss regularly, use mouthwash, stay hydrated. Visit dentist if persistent."
+    },
+    "tonsil_stones": {
+      "symptoms": ["white or yellow lumps in tonsils", "bad breath", "sore throat", "difficulty swallowing"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Gargle with salt water, maintain oral hygiene, manual removal if visible. See ENT if recurrent."
+    },
+    "gum_disease": {
+      "symptoms": ["swollen or bleeding gums", "receding gums", "persistent bad breath", "loose teeth in advanced stages"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dentist/Periodontist",
+      "advice": "Professional cleaning, maintain oral hygiene, antibiotics or treatment for advanced cases."
+    },
+    "tooth_decay": {
+      "symptoms": ["toothache", "sensitivity to hot/cold", "visible holes in teeth", "bad breath"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dentist",
+      "advice": "Dental fillings, fluoride treatment, maintain oral hygiene."
+    },
+    "wisdom_tooth_impaction": {
+      "symptoms": ["pain at back of jaw", "swelling", "difficulty opening mouth", "infection around teeth"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dentist/Oral Surgeon",
+      "advice": "Dental X-ray, possible extraction, maintain oral hygiene."
+    },
+    "tmj_pain": {
+      "symptoms": ["jaw pain", "clicking or popping sound while chewing", "headache", "difficulty opening mouth"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dentist/Oral Surgeon",
+      "advice": "Soft diet, jaw exercises, pain relievers. Dental splints may be prescribed."
+    },
+    "bruxism": {
+      "symptoms": ["teeth grinding or clenching", "jaw pain", "headache", "worn tooth enamel"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Use night guard, stress management, avoid chewing gum, maintain dental check-ups."
+    },
+    "scurvy_gums": {
+      "symptoms": ["bleeding gums", "swollen or tender gums", "loose teeth", "fatigue"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Increase Vitamin C intake through fruits and vegetables, maintain oral hygiene."
+    },
+    "dry_socket": {
+      "symptoms": ["severe pain after tooth extraction", "exposed bone at extraction site", "bad breath", "delayed healing"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dentist/Oral Surgeon",
+      "advice": "Visit dentist for proper cleaning, medicated dressings, pain management."
+    },
+    "allergic_sinusitis": {
+      "symptoms": ["nasal congestion", "sneezing", "runny nose", "itchy eyes", "facial pressure"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Antihistamines, nasal corticosteroid sprays, avoid allergens."
+    },
+    "chronic_rhinitis": {
+      "symptoms": ["persistent runny nose", "nasal congestion", "sneezing", "post-nasal drip"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Nasal saline sprays, antihistamines, identify and avoid triggers."
+    },
+    "post_nasal_drip": {
+      "symptoms": ["mucus dripping in throat", "cough", "throat irritation", "bad breath"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Hydration, saline nasal rinse, avoid irritants. See ENT if persistent."
+    },
+    "vocal_cord_nodules": {
+      "symptoms": ["hoarseness", "breathy voice", "throat discomfort", "loss of vocal range"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT/Voice Therapist",
+      "advice": "Voice rest, speech therapy, avoid vocal strain. Surgery in severe cases."
+    },
+    "pharyngitis": {
+      "symptoms": ["sore throat", "difficulty swallowing", "red throat", "fever in bacterial cases"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Warm fluids, saltwater gargle, rest. Antibiotics if bacterial infection confirmed."
+    },
+    "adenoid_enlargement": {
+      "symptoms": ["nasal obstruction", "mouth breathing", "snoring", "recurrent ear infections"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Medical evaluation, possible surgical removal if severe."
+    },
+    "tonsillar_hypertrophy": {
+      "symptoms": ["enlarged tonsils", "snoring", "difficulty swallowing", "sleep disturbance"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Observation if mild, tonsillectomy if causing significant obstruction."
+    },
+    "otitis_externa": {
+      "symptoms": ["ear pain", "itching in ear canal", "redness", "discharge"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Keep ear dry, topical antibiotics, avoid inserting objects into ear."
+    },
+    "barotrauma": {
+      "symptoms": ["ear pain", "feeling of fullness", "temporary hearing loss", "dizziness"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Yawning, swallowing, use of decongestants before flights, ENT evaluation if severe."
+    },
+    "wax_impaction": {
+      "symptoms": ["ear fullness", "reduced hearing", "earache", "tinnitus"],
+      "category": "mild",
+      "action": "book_appointment",
+      "specialist": "ENT",
+      "advice": "Ear irrigation or removal by ENT, avoid cotton swabs inside ear."
+    },
+    "snoring_simple": {
+      "symptoms": ["loud snoring during sleep", "restless sleep", "daytime fatigue"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Maintain healthy weight, sleep on side, avoid alcohol before sleep, nasal strips if needed."
+    },
+    "flatulence": {
+      "symptoms": ["excessive gas", "belching", "abdominal bloating", "cramps"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Avoid gas-forming foods, eat slowly, probiotics if needed."
+    },
+    "bloating": {
+      "symptoms": ["abdominal fullness", "distended belly", "discomfort", "belching"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Eat smaller meals, avoid carbonated drinks, monitor for intolerances."
+    },
+    "lactose_intolerance": {
+      "symptoms": ["bloating", "diarrhea", "gas", "abdominal cramps after dairy consumption"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Avoid lactose-containing foods, use lactose-free alternatives, lactase enzyme supplements if needed."
+    },
+    "gluten_intolerance": {
+      "symptoms": ["abdominal pain", "bloating", "diarrhea", "fatigue", "headache"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Avoid gluten-containing foods (wheat, barley, rye), read food labels, consider dietitian guidance."
+    },
+    "travelers_diarrhea": {
+      "symptoms": ["frequent loose stools", "abdominal cramps", "nausea", "mild fever"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Hydration with ORS, avoid risky foods, antibiotics only if severe or persistent."
+    },
+    "motion_sickness": {
+      "symptoms": ["nausea", "vomiting", "dizziness", "sweating during travel"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Sit in stable part of vehicle, fresh air, avoid heavy meals, use antihistamines if needed."
+    },
+    "morning_sickness": {
+      "symptoms": ["nausea", "vomiting, especially in morning", "food aversions"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Small frequent meals, hydration, ginger, vitamin B6 supplements under guidance."
+    },
+    "anal_fissure": {
+      "symptoms": ["pain during bowel movements", "bleeding", "itching"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Proctologist",
+      "advice": "Increase fiber intake, hydration, topical anesthetic or ointments. Surgery if chronic."
+    },
+    "anal_fistula": {
+      "symptoms": ["pain", "discharge", "swelling around anus", "recurrent infections"],
+      "category": "severe",
+      "action": "seek_medical_attention",
+      "specialist": "Proctologist",
+      "advice": "Surgical intervention, antibiotics if infection present."
+    },
+    "rectal_prolapse": {
+      "symptoms": ["protrusion of rectum from anus", "discomfort", "bleeding", "fecal incontinence"],
+      "category": "severe",
+      "action": "seek_medical_attention",
+      "specialist": "Proctologist",
+      "advice": "Surgical repair, manage underlying constipation."
+    },
+    "fecal_incontinence": {
+      "symptoms": ["involuntary stool leakage", "urgency", "soiling clothes"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Gastroenterologist/Proctologist",
+      "advice": "Pelvic floor exercises, dietary modification, medications or surgery in severe cases."
+    },
+    "hernia": {
+      "symptoms": ["bulge in abdomen or groin", "pain or discomfort", "worsens with straining"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Surgeon",
+      "advice": "Surgical repair, avoid heavy lifting, supportive belts if needed temporarily."
+    },
+    "gastroenteritis": {
+      "symptoms": ["diarrhea", "vomiting", "abdominal cramps", "fever", "nausea"],
+      "category": "general",
+      "action": "self_care",
+      "advice": "Hydration with ORS, rest, light diet. Seek medical care if severe or persistent."
+    },
+    "diverticulitis": {
+      "symptoms": ["lower abdominal pain", "fever", "nausea", "changes in bowel habits"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Gastroenterologist",
+      "advice": "Antibiotics, clear liquid diet initially, surgical intervention if recurrent or complicated."
+    },
+    "fatty_pancreas": {
+      "symptoms": ["abdominal discomfort", "indigestion", "bloating", "possible mild jaundice"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Maintain healthy diet, reduce alcohol and fatty foods, regular exercise, monitor pancreatic function."
+    },
+    "cervical_spondylosis": {
+      "symptoms": ["neck pain", "stiffness", "headache", "numbness or tingling in arms"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Orthopedic/Physiotherapist",
+      "advice": "Neck exercises, posture correction, pain relievers, physiotherapy. Surgery in severe cases."
+    },
+    "frozen_shoulder": {
+      "symptoms": ["shoulder stiffness", "painful range of motion", "difficulty lifting arm"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Orthopedic/Physiotherapist",
+      "advice": "Physiotherapy, pain management, corticosteroid injections if needed."
+    },
+    "tennis elbow": {
+      "symptoms": ["pain on outer elbow", "weak grip", "pain during lifting or twisting"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Rest, ice packs, physiotherapy, elbow brace, avoid repetitive movements."
+    },
+    "golfers_elbow": {
+      "symptoms": ["pain on inner elbow", "weak grip", "pain during wrist flexion"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Rest, ice packs, physiotherapy, elbow support, avoid repetitive strain."
+    },
+    "shin_splints": {
+      "symptoms": ["pain along inner shin", "tenderness", "swelling", "pain during running or walking"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Rest, ice, proper footwear, stretching exercises, gradual increase in activity."
+    },
+    "plantar_fasciitis": {
+      "symptoms": ["heel pain, especially in morning", "stiffness", "pain after prolonged standing"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Stretching exercises, proper footwear, heel pads, pain relievers."
+    },
+    "bunion": {
+      "symptoms": ["painful bump on base of big toe", "swelling", "redness", "difficulty wearing shoes"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Orthopedic/Podiatrist",
+      "advice": "Footwear modification, padding, orthotics, surgery if severe."
+    },
+    "flat_feet_pain": {
+      "symptoms": ["arch pain", "heel pain", "swelling", "difficulty walking long distances"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Use arch supports, proper footwear, stretching and strengthening exercises."
+    },
+    "heel_spur": {
+      "symptoms": ["sharp heel pain", "pain after rest", "localized tenderness"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Stretching, heel pads, ice, anti-inflammatory medications."
+    },
+    "costochondritis": {
+      "symptoms": ["chest pain", "tenderness along ribs", "pain worsens with movement or pressure"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Pain relievers, rest, avoid heavy lifting, heat or ice packs for relief."
+    },
+    "growing_pains": {
+      "symptoms": ["leg pain at night", "muscle soreness", "no swelling or redness", "typically children 3-12 years"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Massage, gentle stretching, warm compresses, reassurance to parents."
+    },
+    "tension_type_headache": {
+      "symptoms": ["pressing or tightening headache", "bilateral pain", "mild to moderate intensity"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Stress management, hydration, rest, pain relievers if needed."
+    },
+    "cluster_headache": {
+      "symptoms": ["severe unilateral headache", "eye watering", "nasal congestion", "short-duration attacks"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Neurologist",
+      "advice": "Oxygen therapy, medications (triptans), avoid triggers."
+    },
+    "motion_sickness_vertigo": {
+      "symptoms": ["dizziness", "nausea", "vomiting", "loss of balance during movement"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Stable gaze, fresh air, antiemetic medications if needed."
+    },
+    "benign_positional_vertigo": {
+      "symptoms": ["sudden vertigo with head movement", "nausea", "short-lasting dizziness episodes"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "ENT/Neurologist",
+      "advice": "Epley maneuver, vestibular rehabilitation exercises, avoid sudden head movements."
+    },
+    "restless_leg_syndrome": {
+      "symptoms": ["unpleasant leg sensations", "urge to move legs", "worse at night", "sleep disturbance"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Leg stretches, massage, reduce caffeine, iron supplementation if deficient."
+    },
+    "neuralgia": {
+      "symptoms": ["sharp, shooting pain along nerve path", "sudden episodes", "localized tenderness"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Neurologist",
+      "advice": "Pain medications, nerve blocks, physiotherapy if needed."
+    },
+    "writers_cramp": {
+      "symptoms": ["hand or finger cramping while writing", "difficulty holding pen", "pain or stiffness in fingers"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Hand exercises, ergonomic pen grip, rest, physiotherapy if persistent."
+     },
+    "car_sickness": {
+      "symptoms": ["nausea", "vomiting", "dizziness", "sweating during travel"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Sit facing forward, fresh air, avoid heavy meals, antiemetic medications if needed."
+    },
+    "light_headedness": {
+      "symptoms": ["feeling faint", "dizziness", "momentary imbalance", "no severe associated symptoms"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Hydrate, sit or lie down, avoid sudden standing, check blood pressure if frequent."
+    },
+    "dehydration_cramps": {
+      "symptoms": ["muscle cramps", "fatigue", "dry mouth", "thirst"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Hydration with water or oral rehydration solutions, electrolyte-rich fluids, rest."
+    },
+    "overhydration": {
+      "symptoms": ["nausea", "headache", "confusion", "swelling"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Physician",
+      "advice": "Limit fluid intake, monitor electrolytes, medical evaluation for severe cases."
+    },
+    "electrolyte_imbalance": {
+      "symptoms": ["muscle weakness", "cramps", "irregular heartbeat", "fatigue"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Physician",
+      "advice": "Assess blood electrolytes, correct imbalance through diet or supplements."
+    },
+    "vitamin_b12_deficiency": {
+      "symptoms": ["fatigue", "weakness", "tingling or numbness in hands/feet", "memory issues"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Physician",
+      "advice": "Vitamin B12 supplementation orally or via injection, diet modification."
+    },
+    "iron_deficiency_without_anemia": {
+      "symptoms": ["fatigue", "weakness", "pale skin", "hair loss"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Increase iron-rich foods (spinach, meat), consider supplements if recommended."
+    },
+    "zinc_deficiency": {
+      "symptoms": ["hair loss", "poor immunity", "delayed wound healing", "skin lesions"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Zinc-rich foods (nuts, seeds, meat), supplements if needed."
+    },
+    "magnesium_deficiency": {
+      "symptoms": ["muscle cramps", "tremors", "fatigue", "irregular heartbeat"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Magnesium-rich foods (nuts, greens), supplementation if required."
+    },
+    "obstructive_sleepiness": {
+      "symptoms": ["excessive daytime sleepiness", "snoring", "fatigue", "difficulty concentrating"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Improve sleep hygiene, avoid late-night screen time, evaluate sleep patterns. Seek sleep study if persistent."
+    },
+    "chronic_alcohol_use_disorder": {
+      "symptoms": ["persistent alcohol consumption", "cravings", "withdrawal symptoms", "social or occupational impact"],
+      "category": "severe",
+      "action": "seek_medical_attention",
+      "specialist": "Addiction Specialist",
+      "advice": "Medical evaluation, counseling, support groups, pharmacotherapy if needed."
+    },
+    "nicotine_dependence": {
+      "symptoms": ["cravings for tobacco", "difficulty quitting", "withdrawal symptoms"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Physician/Addiction Specialist",
+      "advice": "Nicotine replacement therapy, counseling, behavior modification."
+    },
+    "caffeine_dependence": {
+      "symptoms": ["headache when skipping caffeine", "fatigue", "irritability", "difficulty concentrating"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Gradual reduction in caffeine intake, hydration, alternative beverages."
+    },
+    "stress_induced_gastritis": {
+      "symptoms": ["upper abdominal pain", "nausea", "loss of appetite", "bloating"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Stress management, small frequent meals, antacids or H2 blockers if needed."
+    },
+    "obesity_related_back_pain": {
+      "symptoms": ["lower back pain", "reduced mobility", "fatigue", "discomfort during physical activity"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Weight management, core strengthening exercises, proper posture, pain relievers if needed."
+    },
+    "vaginal_dryness": {
+      "symptoms": ["itching", "burning", "pain during intercourse", "discomfort"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Use water-based lubricants, maintain hydration, consult gynecologist for persistent symptoms."
+    },
+    "bacterial_vaginosis": {
+      "symptoms": ["thin gray or white vaginal discharge", "fishy odor", "vaginal itching or irritation"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Gynecologist",
+      "advice": "Medical evaluation, antibiotics if prescribed, maintain vaginal hygiene."
+    },
+    "white_discharge": {
+      "symptoms": ["white or milky vaginal discharge", "mild odor", "no itching in normal cases"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Maintain hygiene, wear breathable cotton underwear, consult gynecologist if abnormal."
+    },
+    "polymenorrhea": {
+      "symptoms": ["frequent menstrual periods (<21 days apart)", "mild cramps", "irregular bleeding"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Track cycles, maintain healthy lifestyle, consult gynecologist if persistent."
+    },
+    "oligomenorrhea": {
+      "symptoms": ["infrequent menstrual periods (>35 days apart)", "light bleeding"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Track cycles, maintain healthy weight, consult gynecologist for hormonal evaluation."
+    },
+    "postpartum_depression": {
+      "symptoms": ["persistent sadness", "fatigue", "irritability", "loss of interest in baby or activities"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Psychiatrist/Psychologist",
+      "advice": "Counseling, support groups, therapy, medications if needed."
+    },
+    "mastitis": {
+      "symptoms": ["breast pain", "swelling", "redness", "fever"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Gynecologist",
+      "advice": "Antibiotics if bacterial, continued breastfeeding or pumping, warm compresses."
+    },
+    "premature_ejaculation": {
+      "symptoms": ["ejaculation sooner than desired during sexual activity", "distress or anxiety"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Behavioral techniques, exercises, counseling, medications if prescribed."
+    },
+    "low_testosterone": {
+      "symptoms": ["low libido", "fatigue", "decreased muscle mass", "mood changes"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Endocrinologist",
+      "advice": "Medical evaluation, testosterone replacement therapy if indicated."
+    },
+    "mens_infertility_low_sperm_count": {
+      "symptoms": ["difficulty conceiving", "low sperm count on semen analysis"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Urologist/Andrologist",
+      "advice": "Lifestyle modifications, medical treatment, assisted reproductive techniques if needed."
+    },
+    "pcod_related_acne": {
+      "symptoms": ["facial or body acne", "irregular periods", "excess hair growth"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Maintain skincare routine, hormonal evaluation, diet management, medications if prescribed."
+    },
+    "motion_sickness_common": {
+      "symptoms": ["nausea", "vomiting", "dizziness", "sweating during travel"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Sit in stable part of vehicle, fresh air, avoid heavy meals, antiemetics if needed."
+    },
+    "jet_lag": {
+      "symptoms": ["fatigue", "sleep disturbances", "difficulty concentrating", "mood changes"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Adjust sleep schedule gradually, exposure to sunlight, stay hydrated."
+    },
+    "hangover": {
+      "symptoms": ["headache", "nausea", "fatigue", "thirst", "sensitivity to light"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Hydration, rest, light meals, pain relievers if needed."
+    },
+    "food_allergy": {
+      "symptoms": ["hives", "swelling", "itching", "nausea or vomiting", "difficulty breathing in severe cases"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Allergist",
+      "advice": "Avoid allergen, carry emergency epinephrine if prescribed, antihistamines for mild reactions."
+    },
+    "dust_allergy": {
+      "symptoms": ["sneezing", "nasal congestion", "runny nose", "itchy eyes"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Avoid dust exposure, use air filters, antihistamines if needed."
+    },
+    "cosmetic_allergy": {
+      "symptoms": ["skin redness", "itching", "swelling", "rash at contact site"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Stop using the product, topical antihistamines or corticosteroid creams if needed."
+    },
+    "contact_lens_irritation": {
+      "symptoms": ["eye redness", "itching", "discomfort", "blurred vision"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Remove lenses, clean properly, use rewetting drops, consult ophthalmologist if persistent."
+    },
+    "eye_stye": {
+      "symptoms": ["painful lump on eyelid", "redness", "swelling", "tearing"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Warm compresses, hygiene, avoid squeezing, antibiotics if prescribed by doctor."
+    },
+    "chalazion": {
+      "symptoms": ["painless eyelid lump", "swelling", "redness in some cases"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Warm compresses, gentle massage, medical intervention if persistent."
+    },
+    "puffy_eyes": {
+      "symptoms": ["swollen eyelids", "mild discomfort", "dark circles may co-occur"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Cold compress, reduce salt intake, sleep well, allergies management if needed."
+    },
+    "dark_circles": {
+      "symptoms": ["dark pigmentation under eyes", "puffiness in some cases"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Adequate sleep, hydration, cold compress, skincare creams if needed."
+    },
+    "nose_dryness": {
+      "symptoms": ["dry nasal passages", "mild bleeding", "discomfort, especially in winter"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Use saline sprays, humidifier, avoid excessive nose picking."
+    },
+    "hair_dandruff": {
+      "symptoms": ["flaky scalp", "itching", "redness in some cases"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Use anti-dandruff shampoo, maintain scalp hygiene, avoid harsh hair products."
+    },
+    "split_ends": {
+      "symptoms": ["frayed or broken hair ends", "dry and brittle hair"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Regular trimming, use conditioning treatments, avoid excessive heat styling."
+    },
+    "calluses_on_feet": {
+      "symptoms": ["thickened skin on feet", "pain or discomfort while walking", "rough texture"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Use cushioned footwear, soak and exfoliate feet, protective pads if needed."
+    },
+    "insect_bite_allergy": {
+      "symptoms": ["redness", "swelling", "itching", "mild pain at bite site"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Clean area, apply cold compress, antihistamine cream if needed."
+    },
+    "bee_sting_reaction": {
+      "symptoms": ["painful swelling", "redness", "itching", "rare severe allergic reaction (anaphylaxis)"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Allergist",
+      "advice": "Remove stinger, cold compress, antihistamines. Seek emergency care if severe."
+    },
+    "spider_bite_mild": {
+      "symptoms": ["localized redness", "swelling", "pain", "mild itching"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Clean with soap and water, cold compress, topical antiseptic or antihistamine if needed."
+    },
+    "mosquito_bite_allergy": {
+      "symptoms": ["itching", "redness", "swelling", "mild discomfort"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Apply cold compress, antihistamine cream, avoid scratching."
+    },
+    "minor_cuts_bruises": {
+      "symptoms": ["pain", "swelling", "redness", "bruising or small wound"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Clean wound, apply antiseptic, bandage if needed, cold compress for bruises."
+    },
+    "blisters": {
+      "symptoms": ["fluid-filled skin lesion", "pain or discomfort", "redness around blister"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Keep area clean, avoid popping, use protective padding or bandage."
+    },
+    "corns": {
+      "symptoms": ["hard, thickened skin on toes", "pain while walking or pressure", "rough texture"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Cushioned footwear, soak and exfoliate, protective pads, consult podiatrist if persistent."
+    },
+    "nail_biting_infection": {
+      "symptoms": ["painful redness around nails", "swelling", "pus or tenderness"],
+      "category": "moderate",
+      "action": "book_appointment",
+      "specialist": "Dermatologist",
+      "advice": "Keep nails clean, antiseptic treatment, antibiotics if infected."
+    },
+    "dry_skin": {
+      "symptoms": ["rough, flaky skin", "itching", "cracks in severe cases"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Moisturize regularly, avoid hot water, gentle soap, maintain hydration."
+    },
+    "oily_skin_acne": {
+      "symptoms": ["pimples", "blackheads", "whiteheads", "shiny skin"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Gentle cleansing, non-comedogenic products, topical acne medications if needed."
+    },
+    "excess_sweating": {
+      "symptoms": ["excessive perspiration", "odor", "moist skin"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Use antiperspirants, maintain hygiene, breathable clothing, medical therapy if persistent."
+    },
+    "bad_body_odor": {
+      "symptoms": ["strong, unpleasant smell from sweat", "armpits, feet, or body folds affected"],
+      "category": "mild",
+      "action": "self_care",
+      "advice": "Regular bathing, antiperspirants or deodorants, proper clothing hygiene."
+    }
+  }
+}
+
+
+
