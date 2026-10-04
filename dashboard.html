@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Appointment Dashboard</title>
+<style>
+    /* ---------- General Styles ---------- */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7fb;
+        margin: 0;
+        padding: 0;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+        background: #1E3A8A;
+        padding: 25px 20px;
+        color: white;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .container {
+        max-width: 95%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 12px 20px;
+        background: #1E3A8A;
+        color: white;
+        text-decoration: none;
+        border-radius: 12px;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+        background: #16316f;
+        transform: translateY(-2px);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        background: white;
+    }
+
+    th, td {
+        padding: 15px 12px;
+        text-align: center;
+        font-size: 0.95rem;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    th {
+        background: #1E3A8A;
+        color: white;
+        font-weight: 600;
+    }
+
+    tr:hover {
+        background: #f1f3f6;
+    }
+
+    .status-upcoming { color: #16a34a; font-weight: bold; }
+    .status-expired { color: #ef4444; font-weight: bold; }
+    .status-cancelled { color: #f97316; font-weight: bold; }
+
+    .action-btn {
+        padding: 8px 14px;
+        margin: 0 3px;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 0.85rem;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .attended-btn { background: #22c55e; }
+    .attended-btn:hover { background: #16a34a; transform: translateY(-1px); }
+    .cancel-btn { background: #ef4444; }
+    .cancel-btn:hover { background: #dc2626; transform: translateY(-1px); }
+
+    /* ---------- Responsive ---------- */
+    @media screen and (max-width: 700px) {
+        table, thead, tbody, th, td, tr { display: block; }
+        th { display: none; }
+        td {
+            position: relative;
+            padding-left: 50%;
+            text-align: left;
+        }
+        td::before {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 45%;
+            white-space: nowrap;
+            font-weight: 600;
+        }
+        td:nth-of-type(1)::before { content: "Patient"; }
+        td:nth-of-type(2)::before { content: "Doctor"; }
+        td:nth-of-type(3)::before { content: "Date"; }
+        td:nth-of-type(4)::before { content: "Time"; }
+        td:nth-of-type(5)::before { content: "Status"; }
+        td:nth-of-type(6)::before { content: "Actions"; }
+    }
+
+    /* ---------- Dark Mode ---------- */
+    .dark-mode { background-color: #1F2937; color: #f3f4f6; }
+    .dark-mode header { background-color: #2563EB; }
+    .dark-mode table { background-color: #374151; color: #f3f4f6; }
+    .dark-mode th { background-color: #2563EB; color: white; }
+    .dark-mode tr:hover { background-color: #4b5563; }
+    .dark-mode .btn { background-color: #2563EB; }
+    .dark-mode .btn:hover { background-color: #1D4ED8; }
+</style>
+</head>
+<body>
+<header>Appointment Dashboard</header>
+<div class="container">
+    <a href="/appointment" class="btn">+ Book New Appointment</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Patient</th>
+                <th>Doctor</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if appointments %}
+                {% for appt in appointments %}
+                    <tr>
+                        <td>{{ appt.patient }}</td>
+                        <td>{{ appt.doctor }}</td>
+                        <td>{{ appt.date }}</td>
+                        <td>{{ appt.time }}</td>
+                        <td class="status-{{ appt.status|lower }}">{{ appt.status }}</td>
+                        <td>
+                            {% if appt.status == "upcoming" %}
+                                <form style="display:inline;" method="GET" action="/attend/{{ appt.id }}">
+                                    <button type="submit" class="action-btn attended-btn">✓ Attended</button>
+                                </form>
+                                <form style="display:inline;" method="GET" action="/cancel/{{ appt.id }}">
+                                    <button type="submit" class="action-btn cancel-btn">✕ Cancel</button>
+                                </form>
+                            {% else %}
+                                <span>—</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="6">No appointments found. Click "Book New Appointment" to add one.</td>
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
