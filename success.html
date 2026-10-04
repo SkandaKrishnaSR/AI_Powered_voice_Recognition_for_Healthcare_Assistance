@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Success - Healthcare Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <!-- -------- Header -------- -->
+  <header class="header-login">Healthcare Chatbot</header>
+
+  <!-- -------- Success Message Wrapper -------- -->
+  <div class="form-wrapper">
+    <div class="form-container success-container">
+      <h2>✅ Login Successful!</h2>
+      <p class="success-message">Welcome back! You have successfully logged in.</p>
+
+      <div class="success-actions">
+        <a href="{{ url_for('index') }}">
+          <button class="success-btn">Go to Chatbot</button>
+        </a>
+        <a href="{{ url_for('dashboard') }}">
+          <button class="success-btn">View Appointments</button>
+        </a>
+      </div>
+
+      <p class="demo-text">
+        Want to try demo features? <a href="{{ url_for('appointment') }}">Book a Demo Appointment</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Optional JS for animations or redirect -->
+  <script>
+    // Optional: Auto-redirect after 3 seconds
+    // setTimeout(() => {
+    //   window.location.href = "{{ url_for('index') }}";
+    // }, 3000);
+  </script>
+</body>
+</html>
